@@ -23,6 +23,30 @@ set
 17) Type make run6 for own data set
 18) Type make run7 for own dataset in python
 
+
+Question Problem
+1. Implement a multi-layer perceptron (MLP) based neural network using C.
+2. The implementation should be a parameter-based library. The client or user can
+define the activation function, cost function and backpropagation technique
+using some arguments and then build the <library-file>.so file. The activation
+functions can either be Sigmoid or Tanh, or ReLu. The backpropagation
+algorithm can be either Batch gradient descent or stochastic gradient descent or
+mini-batch gradient descent. The cost function can be either cross-entropy or
+mean squared error
+3. Implement an MLP classifier using Scikit learn library in python.
+4. Design multiple multilayer perceptrons with different activation functions. Plot a
+loss function graph, wherein the x-axis would be your number of iterations, and
+the y-axis would be the loss function value with every iteration.
+5. The loss function graph should have multiple curves corresponding to the
+Scikit-learn version of MLP, your implementation of the MLP classifier with
+different activation functions such as Sigmoid or Tanh, or ReLu. You can have
+two versions of the loss function graph, one with cross-entropy as a cost function
+and one with mean squared error as a cost function.
+6. Record the accuracy of the classifier and also state the observation in the report.
+7. Simulate gradient vanishing problem using a suitable cost function, activation
+function and backpropagation algorithm. Can we get rid of gradient vanishing
+problems? If yes, how and If no, why?
+
 Conclusion
 1. Gradient Vanishing Problem can be seen clearly with seven
 layers
@@ -132,3 +156,6 @@ network is found to be the same for any data set.
 100%.
 18) Nan occurs in relu because of the number exceeding the range of
 double.
+
+
+
