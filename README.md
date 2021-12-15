@@ -97,3 +97,38 @@ relu is giving nan due to the large number
 45. Relu modified is when derivative and original value is divided by
 100000
 46. Python gives nan for relu of MSE. Thus no plot for it
+
+
+
+Result
+1) I have made an MLP Neural Network Library that performs all
+significant functions like any other MLP Library
+2) The library works similar to as sklearn library in neural network
+3) I have implemented it with random weight and bias initialization with
+srand. So each time we run, we may get a different answer.
+4) Gradient vanishing Problem can be seen in high no of layers
+5) Relu may not work correctly because of value overflow, so a possible
+way is to limit the range of relu by dividing its answer by some fixed
+quantity. This changes its derivative part also.
+6) Suppose we divide relu +ve part with x; then its derivatives will also be
+divided by x because the derivative of f(y) = y/x is 1/x
+7) Softmax is used as an output activation function in my classifier
+8) The output function can be changed also
+9) The identity function is used as output activation function in
+Regression
+10) MSE is checked by the regression data model, and Cross entropy is
+checked by the Classification model
+11) I have implemented three types of gradient backpropagation methods
+– basic, stochastic, and Batch. Best performance is seen in basic
+12) Batch also gives optimal performance if the Batch is chosen wisely.
+13) As mentioned above, I have implemented two ways of error checking
+(loss function) -MSE and cross-entropy
+14) Logistic activation function is good as output activation function, but
+it sometimes results in gradient vanishing for less no of layers also.
+15) Tanh is found to be best in all cases.
+16) Performance on many runs of python scikit learn, and my c neural
+network is found to be the same for any data set.
+17) For small input and less complex data set, the accuracy level reaches
+100%.
+18) Nan occurs in relu because of the number exceeding the range of
+double.
